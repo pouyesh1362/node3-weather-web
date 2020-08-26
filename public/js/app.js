@@ -4,7 +4,7 @@ const search = document.querySelector('input');
 
 let message = document.querySelector('#Message');
 
-
+ 
 
 weatherForm.addEventListener('submit', (e)=>{
   e.preventDefault();
