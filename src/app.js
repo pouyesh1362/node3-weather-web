@@ -3,6 +3,7 @@ const forcast = require('./utils/forcast');
 
 const path = require('path');
 const express = require('express');
+const port = process.env.PORT || 3000;
 
 const hbs = require('hbs');
 const { title } = require('process');
@@ -99,6 +100,6 @@ app.get('*', (req, res)=>{
 })
 
 
-app.listen(3000,()=>{
-  console.log(`server is out on port 3000...`);
+app.listen(port,()=>{
+  console.log(`server is out on port ${port}...`);
 })
