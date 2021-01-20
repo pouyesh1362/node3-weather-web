@@ -6,7 +6,6 @@ const express = require('express');
 
 
 const hbs = require('hbs');
-const { title } = require('process');
 
 const publicDirectoryPath = path.join(__dirname, '../public');
 const viewsPath = path.join(__dirname, '../template/views'); 
@@ -87,7 +86,7 @@ app.get('/help/*', (req, res)=>{
   res.render('404', {
     name: 'Pouyesh',
     title: 'help',
-    errorMessage: 'help extetion not exist',
+    errorMessage: 'Page not found',
   })
 
 })
@@ -96,7 +95,7 @@ app.get('*', (req, res)=>{
   res.render('404',{
     name: 'Pouyesh',
     title: 'weather',
-    errorMessage: 'extention not exist',
+    errorMessage: 'Page not found',
   });
 })
 

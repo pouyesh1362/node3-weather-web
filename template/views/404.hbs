@@ -8,11 +8,12 @@
   <link rel="icon" href="/img/weather.png">
 </head>
 <body>
-  <div class="main-content"></div>
-  <header>{{>header}}</header>
-  <p>{{errorMessage}}</p>
-  <img id="not_found" src="/img/2.jpg" alt="Page not found">
+  <div class="main-content">
+      {{>header}}
+      <p  class="error-p">{{errorMessage}}</p>
   </div>
-  <footer>{{>footer}}</footer>
+  <img id="not_found" src="./img/2.jpg" alt="Page not found">
+  </div>
+  {{>footer}}
 </body>
 </html>

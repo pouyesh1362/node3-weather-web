@@ -6,23 +6,20 @@
   <title>{{title}}</title>
     <link rel="icon" href="/img/weather.png">
   <link rel="stylesheet" href="./css/style.css">
-
 </head>
-<body>
+<body >
+    <div class="main-content">
+      {{>header}}
+      <p>Browse location find the weather</p>
 
-  <div class="main-content">
-  <header>{{>header}}</header>
-  <h1>{{title}}</h1>
-
-  <form action="">
-    <input type="text" placeholder="Location">
-    <button>Search</button>
-  </form>
-
-  <p id="Message"></p>
-
-  </div>
-  <footer>{{>footer}}</footer>
+      <form action="">
+        <input type="text" placeholder="Location">
+        <button>Search</button>
+      </form>
+      <p id="Message"></p>
+      <p id="Message-2"></p>
+    </div>
+    {{>footer}}
     <script src="./js/app.js"></script>
 </body>
 </html>
