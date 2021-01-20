@@ -12,6 +12,7 @@ body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: linear-gradient(50deg, white, blue);
 }
 
 .main-content{
@@ -51,3 +52,22 @@ h1 {
   border-radius: 1rem;
   box-shadow: 1rem 1rem 1rem  rgba(80, 73, 73, 0.162);
 }
+
+input{
+border: .1rem solid #cccccc;
+padding: .3rem;
+height: 2.3rem;
+width: 20rem;
+}
+
+button{
+  cursor: pointer;
+  border: .1rem solid #888888;
+  background-color: #888888;
+  height: 3rem;
+  border-radius: .2rem;
+  color: white;
+}
+
+
+
